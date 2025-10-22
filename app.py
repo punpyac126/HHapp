@@ -274,7 +274,8 @@ def render_top_header():
     c1, c2 = st.columns([1,6])
     with c1:
         lp = get_logo_path()
-        if lp: st.image(lp, use_column_width=True)
+        if lp:
+            st.image(lp, use_container_width=True)
     with c2:
         st.markdown(f"## {APP_TITLE}")
 
